@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "helvetica";
+    src: url(fonts/Helvetica.woff);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "helvetica";
+    src: url(fonts/Helvetica-Bold.woff);
+    font-weight: bold;
+}
+p {
+    color: white;
+    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+    font-size: 8px;
+}
+
+.bkg {
+    background-image: linear-gradient(#25253a, black);
+    width: 421px;
+    height: 546px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.top {
+    overflow: hidden;
+}
+.top div {
+    float: left;
+}
+.top div.left p {
+    font-weight: bold;
+}
+.top div.right{
+    float: right;
+    padding-left: 20px;
+}
+
+p.center {
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: 70px;
+}
+
+div.bottom {
+    position: relative;
+    height: 500px;
+}
+.bottom p {
+    font-weight: bold;
+    font-size: 600px;
+    display: inline;
+}
+
+.bottom p.u {
+    position: absolute;
+    bottom: 0;
+    left: -35px;
+    color: rgba(255, 255, 255, 1);
+    z-index: 1
+}
+
+.bottom p.a {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    color: rgba(190, 40, 35, 0.75);
+    z-index: 1;
+}
+
+/* rain section */
+.drop {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.6));
+    width: 1px;
+    height: 30px;
+    position: absolute;
+    bottom: 200px;
+    animation: fall 1s linear infinite;
+    -webkit-animation: fall 1s linear infinite;
+    -moz-animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+    to {margin-top: 900px};
+}
+@-webkit-keyframes fall {
+    to {margin-top: 900px};
+}
+@-moz-keyframes fall {
+    to {margin-top: 900px};
+}
